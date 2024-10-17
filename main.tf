@@ -2,6 +2,7 @@
 resource "azurerm_resource_group" "example" {
   name     = "rg-gen-rebecca-actions"
   location = "Australia East"
+  tags = {environment="123"}
 }
 
 resource "azurerm_service_plan" "example" {
